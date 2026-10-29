@@ -1,35 +1,38 @@
-# Markdown 튜토리얼
-# 헤더 1
-## 헤더 2
-### 헤더 3
+# Git Tutorial
 
-## 뷸렛 표기
-- 뷸렛1
-- 불렛2
-
-## 숫자 표기
-1. 숫자1
-2. 숫자2
-
----
-
-# 23026-10-27 TIL 무서운 Git / Github
-
-## 오늘 Git 명령어
-```sh
+```bash
+# 깃 초기화
 git init
-git config --list
-git config --global user.email "ovo2703@naver.com"
+
+# 스테이징에 추가
+git add .
+git add -A
 ```
+
+```bash
+# Commit
+git commit -m "commit message..."
+```
+
+```bash
+# push command
 
 git push origin main
 ```
 
-
-```
+```sh
 # git 로그 명령어
+
 git log
 git log --oneline
-git log --oneline
+git log --oneline --all
+```
 
---cmd+x 지우기 한줄
+### 브랜치 생성 및 스위치
+
+```sh
+git branch 브랜치명
+git checkout 브랜치명
+
+git checkout -b 브랜치명
+```
